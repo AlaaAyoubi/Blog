@@ -43,4 +43,24 @@ class PostController extends Controller
     public function edit(){
         return view('posts.edit');
     }
+
+    public function update(){
+        //1- get the user data
+            
+        $title = request()->title;
+        $description = request()->description;
+        $creator = request()->creator;
+
+        //dd($title, $description, $creator);
+        //2- Update the user data (later)
+        //3- redirection to posts.show
+        return to_route(route: 'posts.show', parameters:1);
+    }
+
+    public function destroy(){
+        //1- delete from the post from database
+
+        //2- redirection to posts.index
+        return to_route(route: 'posts.index');
+    }
 }

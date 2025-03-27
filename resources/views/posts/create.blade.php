@@ -19,7 +19,7 @@
           <option value="2">Alia</option>
         </select>
     </div>
-      <input class="btn btn-primary" type="submit" value="Submit">
+      <input class="btn btn-success" type="submit" value="Submit">
   </form>
 </div>
 @endsection
